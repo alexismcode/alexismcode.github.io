@@ -1152,7 +1152,7 @@ body{
         right: -35rem;
     }
 }
-@media (max-width:576px){
+@media (max-width:450px){
     .header{
         right: -3rem;
     }
