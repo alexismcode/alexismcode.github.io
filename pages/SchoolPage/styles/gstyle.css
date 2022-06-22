@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+:root{
+    --aqua: #a1fabc;
+    --lime: #d6fa95;
+    --dark-lime-transparent: #A3B97E;
+    --light-orange: #ffda62;
+    --orange: #FFC300;
+    --dark-orange: #cc9c00;
+    --light-red-orange: #FF9E88;
+    --red-orange: #fd6a48; 
+    --dark-red-orange: #E2755D;
+    --red-orange-transparent: #B64127A6; 
+    --red-violet: #C70039;
+    --violet: #900C3F;
+    --white: #fff
+}
+*{
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+    margin: 0; padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    background: var(--red-orange);
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--light-red-orange);
+}
+html::-webkit-scrollbar-thumb:hover{
+    background: var(--red-violet);
+}
+body{
+    background: var(--lime);
+}
+
+.heading{
+    -webkit-text-stroke: .10rem var(--red-orange);
+    color: var(--orange);
+    font-size: 7rem;
+    text-shadow: 0rem 0rem 1rem var(--red-orange);
+    text-align: center;
+    width: 100%;
+}
+.heading i{
+    font-size: 4.5rem;
+}
+
+p{
+    color: var(--violet);
+    font-size: 2rem;
+}
+p a{
+    background: var(--violet);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.3rem;
+    padding: .3rem;
+    vertical-align: middle;
+}
+p a:hover{
+    background: var(--orange);
+    color: var(--violet);
+}
+
+.header{
+    background: var(--red-orange);
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+.header img{
+    cursor: pointer;
+    height: 4.5rem;
+    margin-left: 1rem;
+    width: 4.5rem;
+}
+.header nav{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    width: 100%;
+}
+.header nav a{
+    border-bottom: .2rem solid var(--red-orange);
+    border-radius: .5rem;
+    color: var(--white);
+    font-weight: bold;
+    padding: 1rem;
+}
+.header nav a:hover{
+    background: var(--red-orange-transparent);
+    border-bottom: .2rem solid var(--lime);
+    color: var(--lime);
+    transition: .4s;
+}
+.header button{
+    background: var(--red-orange);
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    bottom: 6rem;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    padding: 1rem 2rem 1rem 1rem;
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+}
+.header button:hover{
+    background: var(--red-violet);
+    color: var(--lime);
+    font-weight: bold;
+    transition: .4s; 
+}
+.header button a{
+    color: var(--white);
+}
+
+
+
+.grammarSpell{
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 3rem;
+}
+.grammarSpell section{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.grammarSpell section h2, h3{
+    color: var(--red-orange);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.grammarSpell section div{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+}
+
+.grammarSpell section div table{
+    border: .3rem solid var(--red-orange);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top: none;
+    width: 60rem;
+}
+.grammarSpell section div table caption{
+    background: var(--red-orange);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: var(--lime);
+    font-size: 2rem;
+    font-weight: bold;
+    height: 3.5rem;
+    padding: .5rem;
+}
+.grammarSpell section div table tr th{
+    border-bottom: .1rem solid var(--red-orange);
+    border-left: .1rem solid var(--red-orange);
+    border-right: .1rem solid var(--red-orange);
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: lighter;
+    padding: .5rem .2rem;
+}
+.grammarSpell section div table tr td{
+    border-bottom: .1rem solid var(--red-orange);
+    border-left: .1rem solid var(--red-orange);
+    border-right: .1rem solid var(--red-orange);
+    color: var(--white);
+    font-size: 1.6rem;
+    padding: .5rem 1rem;
+}
+.grammarSpell section div table .submit{
+    background-color: var(--red-orange);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+}
+.grammarSpell section div table .submit:hover{
+    background-color: var(--dark-red-orange);
+}
+.grammarSpell section div table .submit td{
+    border: none;
+    color: var(--lime);
+    font-size: 2rem;
+}
+.grammarSpell section div table tr td .answerA{
+    background: var(--light-red-orange);
+    border-bottom: .2rem solid var(--dark-red-orange);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+}
+.grammarSpell section div table tr td .answerA:hover{
+    background: var(--red-orange-transparent);
+    color: var(--lime);
+}
+.grammarSpell section div table tr td .answerB{
+    background: var(--dark-red-orange);
+    border-bottom: .2rem solid var(--light-red-orange);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+}
+.grammarSpell section div table tr td .answerB:hover{
+    background: var(--red-orange-transparent);
+    color: var(--lime);
+}
+
+.grammarSpell section div .sentences{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 70rem;
+}
+.grammarSpell section div .sentences h4{
+    color: var(--dark-orange);
+    font-size: 3rem;
+    text-align: center;
+}
+.grammarSpell section div .sentences ol{
+    background: var(--light-orange);
+    border-radius: 1rem;
+    border: .3rem solid var(--orange);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    padding: 1rem;
+}
+.grammarSpell section div .sentences ol li{
+    color: var(--red-violet);
+    font-size: 2rem;
+    list-style-position: inside;
+}
+.grammarSpell section div .sentences ol li span input{
+    background: var(--light-orange);
+    border-radius: .5rem;
+    border-bottom: .2rem solid var(--dark-orange);
+    color: var(--red-violet);
+    font-size: 1.8rem;
+    text-align: center;
+}
+.grammarSpell section div .sentences ol li span input:hover{
+    background: var(--orange);
+    border-bottom: .2rem solid var(--dark-orange);
+    color: var(--white);
+}
+.grammarSpell section div .sentences ol button{
+    background: var(--orange);
+    border-radius: .5rem;
+    color: var(--red-violet);
+    cursor: pointer;
+    font-size: 2rem;
+    padding: .5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+.grammarSpell section div .sentences ol button:hover{
+    background: var(--dark-orange);
+    color: var(--white);
+}
+
+.grammarSpell section .sounds{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.grammarSpell section .sounds object{
+    align-items: center;
+    background: var(--light-red-orange);
+    border: .5rem solid var(--red-orange);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 25rem;
+    justify-content: center;
+    gap: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+    width: 33rem;
+}
+.grammarSpell section .sounds object audio{
+    background: var(--dark-red-orange);
+    border: .5rem solid var(--red-orange);
+    border-radius: 1rem;
+    width: 30rem;
+}
+.grammarSpell section .sounds object h4{
+    font-size: 2rem;
+    color: var(--lime);
+    text-align: center;
+}
+.grammarSpell section .sounds object input{
+    background: var(--light-red-orange);
+    border-bottom: .3rem solid var(--red-orange);
+    border-radius: 1rem;
+    color: var(--aqua);
+    font-size: 1.7rem;
+    padding: .5rem 1rem;
+    text-align: center;
+    width: 100%;
+}
+.grammarSpell section .sounds object input:hover{
+    background: var(--dark-red-orange);
+    border-bottom: .3rem solid var(--red-orange);
+}
+.grammarSpell section .sounds object button{
+    background: var(--red-orange);
+    border-radius: .5rem;
+    color: var(--lime);
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: .5rem;
+    padding: .5rem 0;
+    width: 100%;
+}
+.grammarSpell section .sounds object button:hover{
+    background-color: var(--dark-red-orange);
+}
+
+
+footer{
+    align-items: center;
+    background: var(--red-orange);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    display: flex;
+    font-size: 2rem;
+    height: 4.5rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+    text-align: center;
+    width: 100%;
+}
+footer section{
+    display: flex;
+    justify-content: space-around;
+    width: 15rem;
+}
+footer section a{
+    color: var(--white);
+    padding: .5rem;
+}
+footer section a:hover{
+    background: var(--red-orange-transparent);
+    border-radius: 1rem;
+    color: var(--lime);
+}
+footer h3{
+    color: var(--white);
+}
+footer h3 a{
+    color: var(--white);
+} 
+footer h3 a:hover{
+    color: var(--lime);
+    text-decoration: underline;
+}

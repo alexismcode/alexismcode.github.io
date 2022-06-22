@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+:root{
+    --aqua: #a1fabc;
+    --lime: #d6fa95;
+    --dark-lime-transparent: #A3B97E;
+    --light-orange: #ffda62;
+    --orange: #FFC300;
+    --dark-orange: #cc9c00;
+    --light-red-orange: #FF9E88;
+    --red-orange: #fd6a48; 
+    --dark-red-orange: #E2755D;
+    --red-orange-transparent: #B64127A6; 
+    --red-violet: #C70039;
+    --violet: #900C3F;
+    --white: #fff
+}
+*{
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+    margin: 0; padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    background: var(--red-orange);
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--light-red-orange);
+}
+html::-webkit-scrollbar-thumb:hover{
+    background: var(--red-violet);
+}
+body{
+    background: var(--lime);
+}
+
+.heading{
+    -webkit-text-stroke: .10rem var(--red-orange);
+    color: var(--orange);
+    font-size: 7rem;
+    text-shadow: 0rem 0rem 1rem var(--red-orange);
+    text-align: center;
+    width: 100%;
+}
+.heading i{
+    font-size: 4.5rem;
+}
+
+p{
+    color: var(--violet);
+    font-size: 2rem;
+}
+p a{
+    background: var(--violet);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.3rem;
+    padding: .3rem;
+    vertical-align: middle;
+}
+p a:hover{
+    background: var(--orange);
+    color: var(--violet);
+}
+
+.header{
+    background: var(--red-orange);
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+.header img{
+    cursor: pointer;
+    height: 4.5rem;
+    margin-left: 1rem;
+    width: 4.5rem;
+}
+.header nav{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    width: 100%;
+}
+.header nav a{
+    border-bottom: .2rem solid var(--red-orange);
+    border-radius: .5rem;
+    color: var(--white);
+    font-weight: bold;
+    padding: 1rem;
+}
+.header nav a:hover{
+    background: var(--red-orange-transparent);
+    border-bottom: .2rem solid var(--lime);
+    color: var(--lime);
+    transition: .4s;
+}
+.header button{
+    background: var(--red-orange);
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    bottom: 6rem;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    padding: 1rem 2rem 1rem 1rem;
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+}
+.header button:hover{
+    background: var(--red-violet);
+    color: var(--lime);
+    font-weight: bold;
+    transition: .4s; 
+}
+.header button a{
+    color: var(--white);
+}
+
+
+
+.home{
+    display: flex;
+    padding: 6rem 3rem;
+}
+.home img{
+    margin: 3rem;
+    width: 50rem;
+}
+.home section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.home section h1{
+    -webkit-text-stroke: .1rem var(--violet);
+    color: var(--red-violet);
+    font-size: 8rem;
+    text-shadow: 0rem 0rem 1rem var(--violet);
+}
+.home section h2{
+    color: var(--red-orange);
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+.about{
+    background: var(--aqua);
+    box-shadow: 0 0 3rem 1rem var(--aqua);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 3rem 3rem;
+}
+.about section{
+    display: flex;
+    flex-direction: column;
+    padding-right: 12rem;
+    gap: 2rem;
+}
+.about section h2{
+    color: var(--red-orange);
+    font-size: 3rem;
+    text-align: center;
+}
+.about img{
+    margin: 7rem 0rem;
+    width: 12rem;
+    position: absolute;
+    right: 3rem;
+}
+
+
+.grammarSpell{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    margin: 5rem 3rem;
+    padding: 2rem 3rem;
+    vertical-align: middle;
+}
+.grammarSpell img{
+    left: 3rem;
+    margin-top: 7rem;
+    position: absolute;
+    width: 25rem;
+}
+.grammarSpell section{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25rem;
+    gap: 2rem;
+}
+.grammarSpell section h2{
+    color: var(--red-orange);
+    font-size: 3rem;
+    text-align: center;
+}
+.grammarSpell section table{
+    border: .3rem solid var(--red-orange);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top: none;
+    margin-left: 20rem;
+    width: 60rem;
+}
+.grammarSpell section table caption{
+    background: var(--red-orange);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: var(--lime);
+    font-size: 2rem;
+    font-weight: bold;
+    height: 3.5rem;
+    padding: .5rem;
+}
+.grammarSpell section table tr th{
+    border-bottom: .1rem solid var(--red-orange);
+    border-left: .1rem solid var(--red-orange);
+    border-right: .1rem solid var(--red-orange);
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: lighter;
+    padding: .5rem .2rem;
+}
+.grammarSpell section table tr td{
+    border-bottom: .1rem solid var(--red-orange);
+    border-left: .1rem solid var(--red-orange);
+    border-right: .1rem solid var(--red-orange);
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+}
+
+.maths{
+    background: var(--aqua);
+    box-shadow: 0 0 3rem 1rem var(--aqua);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 3rem 3rem;
+}
+.maths section{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20rem;
+    gap: 2rem;
+}
+.maths section h2{
+    color: var(--red-orange);
+    font-size: 3rem;
+    text-align: center;
+}
+.maths img{
+    margin: 7rem 0rem;
+    width: 20rem;
+    position: absolute;
+    right: 3rem;
+}
+.maths section div{
+    background: var(--light-orange);
+    border: .3rem solid var(--orange);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+    justify-content: center;
+    width: 60rem;
+}
+.maths section div h3{
+    background:  var(--orange);
+    border-top-left-radius: .3rem;
+    border-top-right-radius: 1rem;
+    color: var(--red-violet);
+    font-size: 2rem;
+    font-weight: bold;
+    height: 3.5rem;
+    padding: .3rem;
+    text-align: center;
+    width: 59.7rem;
+}
+.maths section div p{
+    border-bottom: .1rem solid var(--orange);
+    color: var(--red-violet);
+    text-align: center;
+    width: 59.6rem;
+    padding: 1rem 0;
+}
+.maths section div p span{
+    background: var(--orange);
+    border-bottom: .3rem solid var(--dark-orange);
+    color: var(--white);
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+.art{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    margin: 5rem 3rem;
+    padding: 2rem 3rem;
+    vertical-align: middle;
+}
+.art .artImage{
+    left: 3rem;
+    margin-top: 7rem;
+    position: absolute;
+    width: 25rem;
+}
+.art section{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25rem;
+    gap: 2rem;
+}
+.art section h2{
+    color: var(--red-orange);
+    font-size: 3rem;
+    text-align: center;
+}
+.art section h3{
+    background: var(--red-orange);
+    border-radius: 1rem;
+    color: var(--lime);
+    font-size: 2rem;
+    margin-left: 1rem;
+    padding: .3rem 0;
+    text-align: center;
+    width: 98%;
+}
+.art section div{
+    display: flex;
+    height: 35rem;
+}
+.art section div h3{
+    font-size: 2rem;
+}
+.art section div .exercise{
+    align-items: center;
+    background: var(--light-red-orange);
+    border: .5rem solid var(--red-orange);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+    width: 33rem;
+}
+.art section div .exercise img{
+    border: .5rem solid var(--red-orange);
+    border-radius: 1rem;
+    width: 13rem;
+}
+.art section div .exercise span{
+    color: var(--violet);
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+.art section div .exercise h4{
+    font-size: 2rem;
+    color: var(--red-violet);
+    text-align: center;
+}
+.art section div .exercise p{
+    background: var(--dark-red-orange);
+    border-bottom: .3rem solid var(--red-orange);
+    border-radius: 1rem;
+    color: var(--lime);
+    padding: .5rem 1rem;
+    width: 100%;
+    
+}
+
+.music{
+    background: var(--aqua);
+    box-shadow: 0 0 3rem 1rem var(--aqua);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 3rem 3rem;
+}
+.music section{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20rem;
+    gap: 2rem;
+}
+.music section h2{
+    color: var(--red-orange);
+    font-size: 3rem;
+    text-align: center;
+}  
+.music section h3{
+    background: var(--orange);
+    border-radius: 1rem;
+    color: var(--red-orange);
+    font-size: 2rem;
+    margin-left: 1rem;
+    padding: .3rem 0;
+    text-align: center;
+    width: 103rem;
+}
+.music section div{
+    display: flex;
+    height: 20rem;
+}
+.music section div h3{
+    font-size: 2rem;
+}
+.music section div .exercise{
+    align-items: center;
+    background: var(--light-orange);
+    border: .5rem solid var(--orange);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: center;
+    gap: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+    width: 33rem;
+}
+.music section div .exercise audio{
+    background: var(--dark-orange);
+    border: .5rem solid var(--orange);
+    border-radius: 1rem;
+    width: 30rem;
+}
+.music section div .exercise h4{
+    font-size: 2rem;
+    color: var(--red-orange);
+    text-align: center;
+}
+.music section div .exercise p{
+    background: var(--dark-orange);
+    border-bottom: .3rem solid var(--orange);
+    border-radius: 1rem;
+    color: var(--aqua);
+    padding: .5rem 1rem;
+    width: 100%;
+}
+.music img{
+    margin: 7rem 0rem;
+    width: 20rem;
+    position: absolute;
+    right: 3rem;
+}
+
+
+.blogs{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    margin: 5rem 3rem;
+    padding: 2rem 3rem;
+    vertical-align: middle;
+}
+.blogs img{
+    left: 3rem;
+    margin-top: 7rem;
+    position: absolute;
+    width: 25rem;
+}
+.blogs section{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25rem;
+    gap: 2rem;
+}
+.blogs section h2{
+    color: var(--red-orange);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contact{
+    background: var(--aqua);
+    box-shadow: 0 0 3rem 1rem var(--aqua);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 3rem 3rem;
+}
+.contact .info{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20rem;
+    gap: 2rem;
+}
+.contact .info h2{
+    color: var(--red-orange);
+    font-size: 3rem;
+    text-align: center;
+}
+.contact img{
+    margin: 0rem;
+    width: 20rem;
+    position: absolute;
+    right: 2rem;
+    top: 451rem
+}
+.contact .map{
+    background: var(--light-orange);
+    border: .3rem solid var(--orange);
+    border-radius: 1rem;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+.contact .map iframe{
+    border-radius: 1rem;
+    width: 50%;
+}
+.contact .map div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.contact .map div input{
+    background: var(--dark-orange);
+    border-bottom: .3rem solid var(--orange);
+    border-radius: 1rem;
+    color: var(--aqua);
+    height: 5rem;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 60rem;
+}
+.contact .map div input:hover{
+    background: var(--red-orange-transparent);
+    border-bottom: .3rem solid var(--red-violet);
+    color: var(--light-orange);
+}
+
+footer{
+    align-items: center;
+    background: var(--red-orange);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    display: flex;
+    font-size: 2rem;
+    height: 4.5rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+    text-align: center;
+    width: 100%;
+}
+footer section{
+    display: flex;
+    justify-content: space-around;
+    width: 15rem;
+}
+footer section a{
+    color: var(--white);
+    padding: .5rem;
+}
+footer section a:hover{
+    background: var(--red-orange-transparent);
+    border-radius: 1rem;
+    color: var(--lime);
+}
+footer h3{
+    color: var(--white);
+}
+footer h3 a{
+    color: var(--white);
+} 
+footer h3 a:hover{
+    color: var(--lime);
+    text-decoration: underline;
+}
